@@ -13,13 +13,13 @@ The procedure for creating this application yourself is as follows:
 
 You're basic Yeoman webapp should be working now. Start up grunt to see if it's working.
 
-  $ grunt server
+    $ grunt server
 
 Thanks to the [yeoman team](http://yeoman.io/) for sharing this great web development workflow.
  
 ### Install `grunt-s3`
 
-  $ npm install grunt-s3 --save-dev
+    $ npm install grunt-s3 --save-dev
 
 Thanks to [pifantastic](https://github.com/pifantastic/grunt-s3) for the grunt-s3 task.
   
@@ -66,6 +66,6 @@ aws: grunt.file.readJSON('./aws.json'),
 
 ### Build and watch it deploy!
 
-  $ grunt build
+    $ grunt build
   
 Navigate to your [yeoman-s3 bucket website](http://yeoman-s3.s3-website-us-east-1.amazonaws.com/) and see your work.
