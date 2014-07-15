@@ -27,7 +27,7 @@ Thanks to [pifantastic](https://github.com/pifantastic/grunt-s3) for the grunt-s
 
 ```javascript
 aws: grunt.file.readJSON('./aws.json'),
-    s3: {
+s3: {
     options: {
         key: '<%= aws.key %>',
         secret: '<%= aws.secret %>',
@@ -52,6 +52,17 @@ aws: grunt.file.readJSON('./aws.json'),
         }]
     }
 }
+```
+
+### Add `s3` to your `build` task
+
+```javascript
+grunt.registerTask('build', [
+    'clean:dist',
+    '<...snip...>',
+    'usemin',
+    's3'
+]);
 ```
 
 ### Add `s3` credentials in `aws.json` file
